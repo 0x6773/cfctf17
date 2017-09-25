@@ -18,19 +18,23 @@
 
 Running `binwalk` will reveal the contents of executable. Run the following commands to get flag:
 
+``` bash
     $ binwalk cr4ck_7hi5_7ce7aa193db6fd41fc3857602e72fc1d
     $ dd if=cr4ck_7hi5_7ce7aa193db6fd41fc3857602e72fc1d of=out.png skip=1536 bs=1
     $ eog out.png
+```
 
 ## malicious_0a5aca19667459c2b75c384d7a6af48f.zip
 
 Running `binwalk` will reveal the contents of executable. 
 
+```bash
     $ binwalk -e malicious_0a5aca19667459c2b75c384d7a6af48f.zip
     $ cd _malicious_0a5aca19667459c2b75c384d7a6af48f.zip.extracted
     # file.txt contains hex encoded string of flag
     $ python2 -c "print '`cat flag.txt`'.decode('hex')"
     flag{k33p_up_y0ur_zipp3r5}
+```
 
 ## SimplyBlack_b0c707a6fdf259e468663cebafb84451.png
 
@@ -45,6 +49,7 @@ Flag : `flag{LETHAL}`
 
 Run the following commands to get the flag:
 
+```bash
     $ gdb ./un10ck_m3_a04acef13380d5a9bbc20fddc7dd426c
     (gdb) b *0x400686
     (gdb) b *0x400cca
@@ -54,3 +59,4 @@ Run the following commands to get the flag:
     (gdb) set $rip=0x400cd0
     (gdb) c
     (gdb) q
+```
