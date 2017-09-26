@@ -2,10 +2,11 @@
 
 ## https://grab-the-fwag.herokuapp.com/
 
-* The `md5` of username of hard coded in js. 
+* The `md5` of username is hard coded in js. 
+![screenshot](/imgs/grab-the-flag.png)
 * Use [md5online](http://www.md5online.org/md5-decrypt.html) to get plain text and get `flag{17_w45_hidd3n_in_p14in_5igh7}`
 
-## http://morcodefest17.pythonanywhere.com/encrypt_msg/
+## http://anonymouscodefest17.pythonanywhere.com/askauth/  
 
 * change the `flag` cookie to false, 
 * `Enter`
@@ -13,6 +14,8 @@
 * `md5` of password is cookie pass
 * Use [md5online](http://www.md5online.org/md5-decrypt.html) to get password
 * Enter to get flag.
+
+![Screenshot](/imgs/cookies.png)
 
 ## cr4ck_7hi5_7ce7aa193db6fd41fc3857602e72fc1d
 
